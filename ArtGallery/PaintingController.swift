@@ -21,12 +21,13 @@ class PaintingController {
             painting.append(paint)
         }
         
-        func toggleIsLiked(for painting: Painting){
-            
-        }
-        
-        
         
     }
+    
+    func toggleIsLiked( for painting: Painting){
+        painting.isLiked = !painting.isLiked
+    }
+    
+    
     
 }
