@@ -11,14 +11,14 @@ import UIKit
 
 class PaintingController {
     
-    var painting: [Painting] = []
+    var paintings: [Painting] = []
     
     func loadPaintingsFromAssets (){
         for i in 1...12{
             var image = "image\(i)"
             guard let newImage = UIImage(named: image) else {return}
             let paint = Painting(image: newImage)
-            painting.append(paint)
+            paintings.append(paint)
         }
         
         

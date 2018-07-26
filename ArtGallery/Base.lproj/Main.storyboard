@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Painting List View Controller-->
         <scene sceneID="SJS-me-mbD">
             <objects>
-                <viewController id="Kji-sD-KEr" sceneMemberID="viewController">
+                <viewController id="Kji-sD-KEr" customClass="PaintingListViewController" customModule="ArtGallery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xMY-ze-hyG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,6 +56,9 @@
                         <viewLayoutGuide key="safeArea" id="eG5-eo-e0H"/>
                     </view>
                     <navigationItem key="navigationItem" id="w11-uy-myJ"/>
+                    <connections>
+                        <outlet property="TableView" destination="Xdn-dD-lHb" id="kQg-Zb-OpC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VsK-km-uCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
