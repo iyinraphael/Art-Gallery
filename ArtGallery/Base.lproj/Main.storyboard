@@ -57,7 +57,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="w11-uy-myJ"/>
                     <connections>
-                        <outlet property="TableView" destination="Xdn-dD-lHb" id="kQg-Zb-OpC"/>
+                        <outlet property="tableView" destination="Xdn-dD-lHb" id="BdZ-Wi-klI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VsK-km-uCa" userLabel="First Responder" sceneMemberID="firstResponder"/>

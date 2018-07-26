@@ -7,8 +7,14 @@
 //
 
 import UIKit
+//creating protocol to establish delagate relationship as the delagator
+protocol PaintingTableCellDelegate: class {
+    func likeButtonWasTapped(on cell: PaintingTableViewCell)
+    
+}
 
 class PaintingTableViewCell: UITableViewCell {
+    
     
     private func updateView(){
         guard let painting =  painting else {return}
@@ -27,8 +33,10 @@ class PaintingTableViewCell: UITableViewCell {
         }
     }
     
-    
+    //initializing delegate to access the like button
+    weak var delegate: PaintingTableCellDelegate?
     @IBAction func Like(_ sender: Any) {
+        delegate?.likeButtonWasTapped(on: self)
     }
     
     @IBOutlet weak var ImageView: UIImageView!
